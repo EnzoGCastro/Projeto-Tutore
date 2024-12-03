@@ -1,0 +1,77 @@
+/* Estilo geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #65b7f2;
+}
+
+/* Contêiner do formulário de pagamento */
+.pagamento-container {
+    background-color: white;
+    padding: 40px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Estilo do título */
+.pagamento-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilo dos rótulos */
+.pagamento-container label {
+    display: block;
+    font-size: 14px;
+    margin-top: 15px;
+    color: #555;
+    text-align: left;
+}
+
+/* Estilo dos campos de entrada */
+.pagamento-container input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Estilo do botão */
+.pagamento-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #65b7f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efeito de hover no botão */
+.pagamento-container button:hover {
+    background-color: #4a8dcf;
+}
+
+/* Detalhes do cartão (data de validade e CVV) */
+.card-details {
+    display: flex;
+    gap: 10px;
+}
+
+/* Ajusta os campos da data de validade e CVV */
+.card-details div {
+    flex: 1;
+}
