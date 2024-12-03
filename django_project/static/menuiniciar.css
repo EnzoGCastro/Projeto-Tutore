@@ -1,0 +1,172 @@
+/* Estilos gerais da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    background-color: white;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos da logo no canto esquerdo */
+.logo {
+    height: 60px;
+}
+
+/* Estilos dos botões no canto direito */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn,
+.register-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para o contêiner dos botões */
+.buttons {
+    display: flex;
+    /* organiza horizontalmente */
+    gap: 10px;
+    /* Define um espaço (gap) de 10px entre os botões */
+}
+
+/* Estilo login e registro */
+.login-btn,
+.register-btn {
+    padding: 10px 20px;
+    /* Define o espaço interno dos botões: 10px no topo/baixo e 20px nas laterais */
+    border: none;
+    /* Remove a borda padrão dos botões */
+    border-radius: 4px;
+    /* Deixa as bordas dos botões levemente arredondadas*/
+    color: white;
+    /* Define a cor do texto */
+    cursor: pointer;
+    /* Mostra o ícone de "mãozinha" */
+    font-size: 14px;
+    /* Define o tamanho da fonte dentro */
+    transition: background-color 0.3s ease;
+    /* Define uma transição suave na mudança de cor do fundo, que dura 0.3 segundos */
+}
+
+.informacoes-btn {
+    padding: 10px 20px;
+    /* Define o espaço interno dos botões: 10px no topo/baixo e 20px nas laterais */
+    border: none;
+    /* Remove a borda padrão dos botões */
+    border-radius: 4px;
+    /* Deixa as bordas dos botões levemente arredondadas*/
+    color: #000000;
+    /* Define a cor do texto */
+    cursor: pointer;
+    /* Mostra o ícone de "mãozinha" */
+    font-size: 14px;
+    /* Define o tamanho da fonte dentro */
+}
+
+/* Estilos das informações*/
+.informacoes-btn {
+    background-color: #ffffff;
+}
+
+
+/* Estilos específicos para o botão de login */
+.login-btn {
+    background-color: #b0b0b0;
+    /* Define a cor de fundo do botão de login como cinza (#b0b0b0) */
+}
+
+/* Efeito ao passar o mouse sobre o botão de login */
+.login-btn:hover {
+    background-color: #a0a0a0;
+    /* Ao passar o mouse, a cor do fundo muda para um cinza mais escuro (#a0a0a0) */
+}
+
+/* Estilos específicos para o botão de registro */
+.register-btn {
+    background-color: #000000;
+    /* Define a cor de fundo do botão de registro como preto (#000000) */
+}
+
+/* Efeito ao passar o mouse sobre o botão de registro */
+.register-btn:hover {
+    background-color: #333333;
+    /* Ao passar o mouse, a cor do fundo muda para um preto mais claro (#333333) */
+}
+
+/* Corpo com fundo azul-claro */
+main {
+    background-color: #5EAFD5;
+    height: calc(100vh - 160px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contêiner dos três retângulos */
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* Estilos dos retângulos */
+.box {
+    background-color: white;
+    flex: 1;
+    height: 300px;
+    margin: 0 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Estilo da imagem no topo */
+.image-top {
+    width: 100%;
+    height: 200px;
+    /* Define uma altura fixa */
+    object-fit: cover;
+    /* Faz a imagem cobrir o espaço sem distorcer */
+    border-radius: 8px;
+    /* Mantém o arredondamento dos cantos */
+}
+
+/* Estilo do texto na parte inferior */
+.text-bottom {
+    margin: 0;
+    text-align: center;
+}
+
+/* Rodapé com fundo branco */
+footer {
+    background-color: white;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
