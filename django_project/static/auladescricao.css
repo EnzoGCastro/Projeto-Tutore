@@ -1,0 +1,208 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  background-color: #5EAFD5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: calc(100%);
+  padding: 20px;
+}
+
+.retangulo {
+  width: 80%;
+  height: 90%;
+  background: #ECE6F0;
+  border-radius: 40px;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  display: flex;
+}
+
+.superior-retangulo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 20%;
+  background: #ECE6F0;
+  border-radius: 40px 40px 0 0;}
+
+.title-back {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  gap: 20px; 
+  padding: 0 20px; /* Adiciona um padding lateral */
+
+}
+
+.save-info {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  gap: 20px; 
+    padding: 0 20px; /* Adiciona um padding lateral */
+
+}
+
+.text {
+  font-size: 150%;
+  color: #333;
+}
+
+.title-back i, .save-info i {
+  font-size: 1.5rem; /* Aumenta o tamanho dos ícones */
+}
+
+.medio-retangulo {
+  display: flex;
+  justify-content: flex-start; /* Alinha à esquerda */
+  align-items: center;
+  width: 100%;
+  height: 60%;
+  background: #ffffff;
+  padding: 10px 20px;
+  box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
+}
+
+.box {
+  background-color: white;
+  width: 35%; 
+  height: 90%; /* Mantém a altura da caixa igual à largura para garantir que seja quadrada */
+  aspect-ratio: 1; /* Mantém a caixa quadrada */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Garante que a imagem não ultrapasse os limites da caixa */
+}
+
+.box img {
+  width: 100%; /* Faz a imagem cobrir todo o espaço da caixa */
+  height: 100%; /* Faz a imagem cobrir todo o espaço da caixa */
+  object-fit: cover; /* Faz a imagem cobrir todo o espaço da caixa sem distorcer */
+}
+
+.campo-texto {
+  display: flex;
+  flex-direction: column; /* Para empilhar título, subtítulo e conteúdo verticalmente */
+  justify-content: flex-start; /* Alinha o conteúdo no início */
+  align-items: flex-start; /* Alinha o texto à esquerda */
+  width: 60%; /* Ajuste conforme necessário */
+  height: 80%; /* Mantém 80% da altura do meio retângulo */
+  padding: 20px; /* Adiciona um espaçamento interno */
+  box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
+  background: transparent; /* Define o fundo como transparente */
+  margin: 0 auto; /* Margens automáticas para centralizar */
+}
+
+.titulo {
+  font-size: 1.5rem; /* Tamanho do título */
+  margin: 0 0 10px 0; /* Margem abaixo do título */
+  color: #333; /* Cor do texto */
+}
+
+.data-hora {
+  display: flex; /* Alinha os elementos na horizontal */
+  gap: 20px; /* Espaçamento entre os campos */
+  margin: 10px 0; /* Margem em cima e embaixo */
+}
+
+.label {
+  font-size: 1rem; /* Tamanho do texto da label */
+  color: #333; /* Cor do texto */
+  margin-right: 5px; /* Espaçamento à direita das labels */
+}
+
+.input-data, .input-hora {
+  padding: 10px; /* Espaçamento interno nos campos */
+  border: 1px solid #ccc; /* Borda padrão */
+  border-radius: 5px; /* Cantos arredondados */
+  font-size: 1rem; /* Tamanho do texto */
+  width: 120px; /* Largura fixa para os campos */
+}
+
+.input-data:focus, .input-hora:focus {
+  border-color: #5EAFD5; /* Cor da borda quando focado */
+  outline: none; /* Remove o contorno padrão */
+}
+
+.conteudo {
+  font-size: 1rem; /* Tamanho do conteúdo */
+  color: #444; /* Cor do texto */
+}
+
+.inferior-retangulo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinha à esquerda */
+  width: 100%;
+  height: 20%;
+  background: #ECE6F0;
+  border-radius: 0px 0px 40px 40px;}
+
+.perfil {
+  display: flex;
+  align-items: center; /* Alinha a imagem e o nome verticalmente */
+  margin-right: 15px; /* Espaçamento à direita do círculo */
+  padding: 0 20px; /* Adiciona um padding lateral */
+}
+
+.imagem-perfil {
+  width: 60px; /* Tamanho da imagem do perfil */
+  height: 60px; /* Tamanho da imagem do perfil */
+  border-radius: 50%; /* Mantém a imagem redonda */
+  object-fit: cover; /* Faz a imagem cobrir o espaço sem distorção */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para a imagem */
+}
+
+.nome-perfil {
+  font-size: 1rem; /* Tamanho do texto do nome */
+  color: #000000; /* Cor do texto do nome (branco para destaque) */
+  margin-left: 10px; /* Espaçamento à esquerda do nome */
+}
+
+.botoes {
+  display: flex; /* Usa flexbox para alinhar horizontalmente */
+  justify-content: center; /* Centraliza os elementos dentro do div */
+  align-items: center; /* Alinha verticalmente no centro */
+  gap: 20px; /* Adiciona espaço entre os elementos */
+  margin-left: auto; /* Empurra os elementos para o lado direito */
+  margin-right: auto; /* Empurra os elementos para o lado esquerdo */
+}
+
+.valor-pagamento {
+  font-size: 1rem; /* Tamanho do texto para o valor de pagamento */
+  color: #000000; /* Cor do texto (branco) */
+}
+
+.botao-inscricao {
+  padding: 10px 20px; /* Tamanho do botão */
+  font-size: 1rem; /* Tamanho do texto do botão */
+  color: #fff; /* Cor do texto do botão */
+  background-color: #007bff; /* Cor de fundo do botão */
+  border: none; /* Remove a borda padrão */
+  border-radius: 5px; /* Cantos arredondados */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  transition: background-color 0.3s; /* Transição suave para mudança de cor */
+}
+
+.botao-inscricao:hover {
+  background-color: #0056b3; /* Cor ao passar o mouse sobre o botão */
+}
+
