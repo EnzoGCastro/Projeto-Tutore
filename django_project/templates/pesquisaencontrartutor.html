@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encontrar um tutor</title>
+    <link href="../static/pesquisaencontrartutor.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1></h1>
+    </header>
+
+    <main>
+        <div class="retangulo-barra-de-busca">
+
+            <button class="botao-listrado"></button>
+            <input id="barra-de-busca" type="text" class="conteudo-buscado" placeholder="Pesquisar..." onfocus="mostrarSugestoes()" oninput="filtrarSugestoes()">
+            <button class="botao-busca" onclick="adicionarBusca()">Buscar</button>     
+        </div>
+        <div id="sugestoes" class="sugestoes"></div>
+        <div class="rectangle">
+            <!-- Repetindo os cards para criar a grade -->
+            <div class="card">
+                <img src="https://st3.depositphotos.com/6513598/18928/v/450/depositphotos_189283006-stock-illustration-blackboard-inscribed-with-scientific-formulas.jpg" alt="Thumbnail do Vídeo" class="thumbnail">
+                <div class="content">
+                    <img src="https://i0.wp.com/www.icad.puc-rio.br/wp-content/uploads/2018/04/LuisFernando.jpg?fit=522%2C425&ssl=1" alt="Foto de Perfil" class="profile">
+                    <div class="text">
+                        <p class="title">Aula de Cálculo: Limites</p>
+                        <p class="name">Luís Bicalho</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repita mais cards conforme necessário -->
+            <div class="card">
+                <img src="https://via.placeholder.com/320x180" alt="Thumbnail do Vídeo" class="thumbnail">
+                <div class="content">
+                    <img src="https://via.placeholder.com/48" alt="Foto de Perfil" class="profile">
+                    <div class="text">
+                        <p class="title">Titulo</p>
+                        <p class="name">Tutor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/320x180" alt="Thumbnail do Vídeo" class="thumbnail">
+                <div class="content">
+                    <img src="https://via.placeholder.com/48" alt="Foto de Perfil" class="profile">
+                    <div class="text">
+                        <p class="title">Titulo</p>
+                        <p class="name">Tutor</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repetindo os cards para criar a grade -->
+            <div class="card">
+                <img src="https://via.placeholder.com/320x180" alt="Thumbnail do Vídeo" class="thumbnail">
+                <div class="content">
+                    <img src="https://via.placeholder.com/48" alt="Foto de Perfil" class="profile">
+                    <div class="text">
+                        <p class="title">Titulo</p>
+                        <p class="name">Tutor</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repita mais cards conforme necessário -->
+            <div class="card">
+                <img src="https://via.placeholder.com/320x180" alt="Thumbnail do Vídeo" class="thumbnail">
+                <div class="content">
+                    <img src="https://via.placeholder.com/48" alt="Foto de Perfil" class="profile">
+                    <div class="text">
+                        <p class="title">Titulo</p>
+                        <p class="name">Tutor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/320x180" alt="Thumbnail do Vídeo" class="thumbnail">
+                <div class="content">
+                    <img src="https://via.placeholder.com/48" alt="Foto de Perfil" class="profile">
+                    <div class="text">
+                        <p class="title">Titulo</p>
+                        <p class="name">Tutor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pass"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
