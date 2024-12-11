@@ -28,6 +28,6 @@ urlpatterns = [
     path("minhasturmas/",views.minhasTurmas, name = "minhas-turmas"),
     path("minhasaulas/",views.minhasAulas, name = "minhas-aulas"),
     path("minhaspostagens/",views.minhasPostagens, name = "minhas-postagens"),
-
-
+    path("auladescexemplo/", views.aulaDesc, name = "aula descricao"),
+    path("pagamento/", views.pagamento, name = "pagamento"),
 ]

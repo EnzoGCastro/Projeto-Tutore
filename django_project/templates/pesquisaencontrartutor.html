@@ -9,7 +9,6 @@
     <link rel="stylesheet" href='{% static 'pesquisaencontrartutor.css' %}'>
 </head>
 <body>
-    {% include "header.html" %} 
 
     <header>
         <h1></h1>
@@ -25,7 +24,7 @@
         <div id="sugestoes" class="sugestoes"></div>
         <div class="rectangle">
             <!-- Repetindo os cards para criar a grade -->
-            <div class="card">
+            <div onclick="location.href='http://127.0.0.1:8000/auladescexemplo';" class="card">
                 <img src="https://st3.depositphotos.com/6513598/18928/v/450/depositphotos_189283006-stock-illustration-blackboard-inscribed-with-scientific-formulas.jpg" alt="Thumbnail do Vídeo" class="thumbnail">
                 <div class="content">
                     <img src="https://i0.wp.com/www.icad.puc-rio.br/wp-content/uploads/2018/04/LuisFernando.jpg?fit=522%2C425&ssl=1" alt="Foto de Perfil" class="profile">
