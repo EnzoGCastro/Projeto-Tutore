@@ -22,5 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.menuIniciar, name="home"),
     path("forum/", views.forum, name="forum"),
-    path("encontrartutor/", views.encontrarTutor, name="encontrar-tutor")
+    path("encontrartutor/", views.encontrarTutor, name="encontrar-tutor"),
+    path("auladescexemplo/", views.aulaDesc, name = "aula descricao"),
+    path("pagamento/", views.pagamento, name = "pagamento"),
 ]
