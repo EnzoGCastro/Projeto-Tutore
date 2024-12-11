@@ -59,7 +59,7 @@ class ClassPost(models.Model):
     description = models.TextField()
     image = models.ImageField(upload_to='post_images/', null=True, blank=True)
 
-    def __str__(self):
+    def str(self):
         return f"Post about class by {self.tutor_name} on {self.date} at {self.time}"
 
     def save(self, force_insert=False, force_update=False, using=None, update_fields=None):
