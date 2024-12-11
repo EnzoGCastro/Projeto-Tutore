@@ -9,7 +9,6 @@
     <title>Perfil</title>
 </head>
 <body class = "maincontainer bg-info">
-  {% include "header.html" %}
       <div class = profilecontainer>
         <div class = imgAndMetas>
             <img style="border-radius:40px" src="../static/profileplaceholder.jpg" width="200">
@@ -23,8 +22,8 @@
             <div class="metascontainer">Curso: placeholderCourse</div>
         </div>
         <div class = buttonholder>
-            <button style="width: 400px; height:100px; margin-bottom: 50px; color: white;" type="button" class="btn btn-info">Minhas Turmas</button>
-            <button style="width: 400px; height:100px; color: white;" type="button" class="btn btn-info">Minhas Postagens</button>
+            <a href = 'http://127.0.0.1:8000/minhasturmas'><button style="width: 400px; height:100px; margin-bottom: 50px; color: white;" type="button" class="btn btn-info">Minhas Turmas</button></a>
+            <a href = 'http://127.0.0.1:8000/minhaspostagens'><button style="width: 400px; height:100px; color: white;" type="button" class="btn btn-info">Minhas Postagens</button></a>
         </div>
 
 

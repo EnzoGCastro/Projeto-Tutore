@@ -18,9 +18,17 @@ def perfilAluno(request):
 
 def perfilTutor(request):
     return render(request, 'perfil.html', locals())
+def minhasTurmas(request):
+    return render(request, 'minhasturmas.html', locals())
 
+def minhasPostagens(request):
+    return render(request, 'minhaspostagens.html', locals())
+
+def minhasAulas(request):
+    return render(request, 'minhasaulas.html', locals())
 def aulaDesc(request):
     return render(request, 'auladescricao.html', locals())
 
 def pagamento(request):
     return render(request, 'pagamento.html', locals())
+
