@@ -19,3 +19,8 @@ def perfilAluno(request):
 def perfilTutor(request):
     return render(request, 'perfil.html', locals())
 
+def aulaDesc(request):
+    return render(request, 'auladescricao.html', locals())
+
+def pagamento(request):
+    return render(request, 'pagamento.html', locals())

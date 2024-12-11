@@ -12,6 +12,9 @@ header {
     text-align: center;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-content {
@@ -29,6 +32,7 @@ header {
 .buttons {
     display: flex;
     gap: 10px;
+    margin-left: auto;
 }
 
 .login-btn,
@@ -43,12 +47,6 @@ header {
 }
 
 /* Estilos para o contêiner dos botões */
-.buttons {
-    display: flex;
-    /* organiza horizontalmente */
-    gap: 10px;
-    /* Define um espaço (gap) de 10px entre os botões */
-}
 
 /* Estilo login e registro */
 .login-btn,
