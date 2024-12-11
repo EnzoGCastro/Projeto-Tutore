@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="../static/perfil.css" rel="stylesheet">
+    <link rel="stylesheet" href='{% static 'forumConteudo.css' %}'>
 </head>
 <body>
     <div class="container">
@@ -20,7 +20,7 @@
         <div class="main-content">
             <div class="post">
                 <div class="post-image">
-                    <img src="partedecimaForum.png" alt="Post Image">
+                    <img src='{% static 'imagemforum.png' %}' alt="Post Image">
                 </div>
                 <div class="buttons">
                     <button class="btn">👍 Like</button>

@@ -170,3 +170,14 @@ footer {
     padding: 20px;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color:black; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
