@@ -18,3 +18,4 @@ def perfilAluno(request):
 
 def perfilTutor(request):
     return render(request, 'perfil.html', locals())
+
