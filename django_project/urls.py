@@ -23,6 +23,11 @@ urlpatterns = [
     path("", views.menuIniciar, name="home"),
     path("forum/", views.forum, name="forum"),
     path("encontrartutor/", views.encontrarTutor, name="encontrar-tutor"),
+    path("perfilaluno/",views.perfilAluno, name = "perfil-aluno"),
+    path("perfiltutor/",views.perfilTutor, name = "perfil-tutor"),
+    path("minhasturmas/",views.minhasTurmas, name = "minhas-turmas"),
+    path("minhasaulas/",views.minhasAulas, name = "minhas-aulas"),
+    path("minhaspostagens/",views.minhasPostagens, name = "minhas-postagens"),
     path("auladescexemplo/", views.aulaDesc, name = "aula descricao"),
     path("pagamento/", views.pagamento, name = "pagamento"),
 ]
