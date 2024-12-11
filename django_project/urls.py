@@ -30,4 +30,5 @@ urlpatterns = [
     path("minhaspostagens/",views.minhasPostagens, name = "minhas-postagens"),
     path("auladescexemplo/", views.aulaDesc, name = "aula descricao"),
     path("pagamento/", views.pagamento, name = "pagamento"),
+    path("criaraula/", views.criacaoAula, name = "criar-aula"),
 ]

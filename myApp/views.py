@@ -32,3 +32,6 @@ def aulaDesc(request):
 def pagamento(request):
     return render(request, 'pagamento.html', locals())
 
+def criacaoAula(request):
+    return render(request, 'criacaoaula.html', locals())
+
