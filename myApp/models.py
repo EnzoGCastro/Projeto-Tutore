@@ -2,6 +2,10 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser, Group, Permission
 
 class User(AbstractUser):
+    id_usuario = models.AutoField(primary_key=True)
+    phone_number = models.CharField(max_length=15, null=True, blank=True)
+    address = models.TextField(null=True, blank=True)
+
     age = models.PositiveIntegerField(null=True, blank=True)
     rating = models.FloatField(default=0.0)
     profile_picture = models.ImageField(upload_to='profile_pictures/', null=True, blank=True)

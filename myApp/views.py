@@ -55,3 +55,7 @@ def pesquisaEncontrarTutor(request):
 def telaMensagem(request):
     template = loader.get_template("../django_project/templates/telamensagem.html")
     return HttpResponse(template.render())
+
+def cadastro(request):
+    template = loader.get_template("../django_project/templates/cadastro.html")
+    return HttpResponse(template.render())
