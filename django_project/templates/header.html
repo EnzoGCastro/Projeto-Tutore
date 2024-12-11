@@ -5,21 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href='{% static 'menuiniciar.css' %}'>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    {% include "header.html" %}
     <header>
         <div class="header-content">
             <!-- logo -->
             <img src="https://reari.uff.br/wp-content/uploads/sites/171/2023/09/pucrio.png" alt="Logo" class="logo">
 
-            <div class="buttons">
-                <button class="informacoes-btn">Recursos</button>
-                <button class="informacoes-btn">Sobre nós</button>
-                <button class="informacoes-btn">Contatos</button>
+            <button class="informacoes-btn">Recursos</button>
+            <button class="informacoes-btn">Sobre nós</button>
+            <button class="informacoes-btn">Contatos</button>
 
-                <button class="login-btn">Login</button>
-                <button class="register-btn">Registrar</button>
+
+            <div style="margin-left: 76em;"class="dropdown">
+                <img style = "width: 80px; border-radius: 20px;"src = '{% static 'profileplaceholder.jpg' %}'>
+                <div class="dropdown-content">
+                    <a href="http://127.0.0.1:8000/perfilaluno">Perfil Aluno</a>
+                    <a href="http://127.0.0.1:8000/perfiltutor">Perfil Tutor</a>
+                </div>
             </div>
         </div>
     </header>
